@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MemosActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/MainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SubView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="@dimen/Subview_Top_And_Buttom_Margin"
+        android:layout_marginBottom="@dimen/Subview_Top_And_Buttom_Margin"
+        android:layout_marginLeft="@dimen/Subview_Left_Margin"
+        android:layout_marginRight="-3dp"
+
+        android:background="@drawable/lo_subview"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/Subview_padding"
+        android:paddingLeft="@dimen/Subview_padding"
+        android:paddingBottom="@dimen/Subview_padding">
+
+        <TextView
+            android:id="@+id/SubView_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="24sp"
+            android:textColor="#444"
+            android:text="Title"/>
+        <TextView
+            android:id="@+id/SubView_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:textColor="#888"
+            android:text="0000-00-00"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="@color/App_colorAccent"/>
+
+        <TextView
+            android:id="@+id/SubView_Content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textColor="#444"
+            android:textSize="16sp"
+            android:text="content"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add" />
+
+</RelativeLayout>

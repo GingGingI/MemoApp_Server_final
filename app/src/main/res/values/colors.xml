@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="App_colorPrimary">#F48360</color>
+    <color name="App_colorPrimaryDark">#e4653e</color>
+    <color name="App_colorAccent">#F24A4A</color>
+
+    <color name="ic_Colors">#FFEEEEEE</color>
+</resources>

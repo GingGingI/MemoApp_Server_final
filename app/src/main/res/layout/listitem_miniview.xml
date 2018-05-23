@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lo_miniview"
+
+    android:layout_marginTop="@dimen/MiniView_T_Margin"
+    android:layout_marginLeft="@dimen/MiniView_LR_Margin"
+    android:layout_marginRight="@dimen/MiniView_LR_Margin"
+    android:padding="@dimen/MiniView_padding">
+
+    <TextView
+        android:id="@+id/List_TitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textColor="#444"/>
+
+    <TextView
+        android:id="@+id/List_TimeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00"
+        android:textSize="12sp"
+        android:textColor="#888"/>
+
+</LinearLayout>
