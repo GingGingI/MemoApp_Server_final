@@ -39,11 +39,10 @@ class MRecyclerViewAdapter: RecyclerView.Adapter<ViewHolder>(){
     }
 
     override fun getItemCount(): Int {
+        return listViewItemList.size
     }
 
 }
-
-
 
 class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val Title: TextView = itemView.findViewById(R.id.List_TitleView)

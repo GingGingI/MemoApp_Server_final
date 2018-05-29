@@ -10,4 +10,5 @@
     <dimen name="MiniView_padding">8dp</dimen>
     
     <dimen name="Subview_padding">16dp</dimen>
+    <dimen name="Size1dp">1dp</dimen>
 </resources>
